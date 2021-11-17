@@ -1,0 +1,242 @@
+body {
+  position: absolute;
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  color: black;
+  margin: 0px;
+}
+
+/* header*/
+header {
+  position: sticky;
+  width: 100%;
+  height: 2cm;
+  z-index: 1;
+  top: 0px;
+  margin: 0px;
+  background-color: teal;
+}
+.hdr_nvbr_main_wrpr {
+  position: relative;
+}
+.hdr_nvbr_wrapper{
+    position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+   grid-gap: 15px;
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+.hdr_nvbr_hm_wrapper,.hdr_nvbr_regi-fr-ntfct_wrp, .hdr_nvbr_lg_wrapper {
+  position: relative;
+  display: block;
+  /**/
+  color: black;
+  width: 2.8rem;
+  height: 1rem;
+  text-align: left;
+}
+.hdr_nvbr_hm_menu,
+.regi-fr-ntfct_frm,
+.hdr_nvbr_sublg {
+  display: none;
+}
+.hdr_nvbr_hm_menu_lis {
+  margin-top: 0px;
+  text-align: left;
+  margin-left: -1.8cm;
+  margin-right: 1.8cm;
+  width: 5cm;
+}
+
+nav ul li {
+  margin-left: 0px;
+  list-style-type: none;
+  border-bottom: solid black 1px;
+  line-height: 2.6rem;
+  padding-right: 12px;
+  word-spacing: 2px;
+  width: 100%;
+}
+nav ul li:last-child {
+  border-bottom: none;
+}
+.hdr_nvbr_all_dead_href{
+  text-decoration: none;
+  color: #fff;
+}
+.hdr_nvbr_lgin-sup_a, .cat_titl{
+    text-decoration: none;
+    color: black;
+}
+.hdr_nvbr_hm_wrapper:hover .hdr_nvbr_hm_menu,
+.hdr_nvbr_lg_wrapper:hover .hdr_nvbr_sublg, .hdr_nvbr_regi-fr-ntfct:hover .regi-fr-ntfct_frm, .hdr_nvbr_regi {
+  display: block;
+  z-index: 1;
+  margin: 0px;
+  width: 5cm;
+  background-color: #ffffff;
+}
+
+.logo-name {
+  position: relative;
+  
+  color: black;
+}
+.hdr_nvbr_srch_frm_wrp {
+  position: relative;
+  
+}
+form{
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: white;
+        border: black solid 1px;
+        
+    }
+    input{
+        all: unset;
+        color: #000;
+        height: 100%;
+        width: 100%;
+        padding-right:10px ;
+    }
+    ::placeholder{
+        color: #000;
+        
+    }
+    
+    button{
+        all: unset;
+    }
+.hdr_nvbr_srch_frm_wrp button {
+  margin-left: -5px;
+  box-sizing: border-box;
+}
+
+
+.hdr_nvbr_sublg {
+  line-height: 3rem;
+  padding: 10px;
+}
+/*main*/
+main {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  font-family: "Times New Roman", Times, serif, Georgia, serif, monospace,
+    "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-size: 12;
+  margin-bottom: 1px;
+  
+}
+.cntnt_img_ar{
+    position: relative;
+    width: 100%;
+}
+.cntnt_img{
+        background-image: url("images/pexels-andrea-piacquadio-2672979.jpg" );
+        background-position: 100%;
+        background-repeat: no-repeat;
+        background-attachment: unset;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    margin: 0.5px;
+  
+    }
+    
+/*aside*/
+.articles {
+  position: relative;
+  
+  background-color: whitesmoke;
+  height: auto;
+  
+}
+
+.cntnt_ctgry,.ftr_cntnt{
+    position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+   grid-gap: 20px;
+}
+.ctgry_cntnt{
+    background-color: rgb(224, 222, 222);
+    border-radius: 6px;
+    box-shadow: 1px 1.5px 1px black;
+}
+.ctgry_cntnt img{
+    position: relative;
+    width: 100%;
+    height: 50%;
+
+}
+.catgry_discri{
+    padding: 5px;
+    text-align: justify;
+}
+/*footer*/
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+.ftr_cntnt {
+  background-color: rgb(24, 22, 22);
+  color: white;
+  width: 100%;
+  height: auto;
+  padding: 15px 4rem;
+  box-sizing: border-box;
+ 
+}
+.ftr_cntnt a {
+     position: relative;
+  color: #ffffff;
+  text-decoration:none;
+}
+.legalrighs a{
+    text-decoration: none;
+}
+.legalrighs a::after{
+content: "|";
+color: white;
+padding: 5px;
+}
+
+@media only screen and (max-width:600px) {
+        .cntnt_ctgry{
+            display:grid;
+            grid-template-columns: auto;
+            grid-gap: 20px;
+        }
+        .ftr_cntnt{
+            display: block;
+}
+.ftr-cont span{
+    word-spacing: 50px;
+}
+
+        .cntnt_img{
+        background-position: 100%;
+        background-repeat: no-repeat;
+        background-attachment: unset;
+    background-size: cover;
+    height: 100vh;
+    width: 760px;
+
+    margin: 0.5px;
+    
+  
+    }
+        
+    }
